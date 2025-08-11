@@ -42,8 +42,8 @@ out;'''
         
         if response.status_code == 200:
             overpass_data_filtered = response.json()['elements']
-        
-        return overpass_data_filtered
+            return overpass_data_filtered
+        return HTTPException(status_code=500, detail=f"Erro interno de requisicao: {response.json()}")  
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Erro interno: {e}")
 
