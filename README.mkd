@@ -2,11 +2,9 @@
 
 ## Descrição
 Serviço necessário para que o robô autônomo se comunique com os demais serviços, esta API realiza as requisições para os serviços [OSRM Backend](https://github.com/projetomaram/OSRM-service) e para o [Overpass API](https://github.com/projetomaram/Overpass-API-service), retornando para o robô uma saída tratada, deixando a cargo dele manipular essa saída como ele desejar.
-****
 
 ## Funcionamento
 Toda sua implementação foi realizada utilizando a linguagem de programação **Python**, e para implementar o serviço Web foi utilizado a biblioteca **FastAPI** que mantém o serviço em execução expondo o endpoint **/robot-path/** para consulta na porta **8000**.
-****
 
 ## Exemplo de uso individual
 Para teste individual, é necessário que esteja em execução também individualmente os serviços [OSRM Backend](https://github.com/projetomaram/OSRM-service) e o [Overpass API](https://github.com/projetomaram/Overpass-API-service). Essa execução pode ser feita por meio da imagem Docker dos mesmos. Com ambos serviços em execução, basta executar o seguinte comando para que o serviço da API seja iniciado: 
