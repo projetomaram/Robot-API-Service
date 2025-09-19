@@ -6,7 +6,6 @@ Serviço necessário para que o robô autônomo se comunique com os demais servi
 
 ## Funcionamento
 Toda sua implementação foi realizada utilizando a linguagem de programação **Python**, e para implementar o serviço Web foi utilizado a biblioteca **FastAPI** que mantém o serviço em execução expondo o endpoint **/robot-path/** para consulta na porta **8000**.
-
 ****
 
 ## Exemplo de uso individual
